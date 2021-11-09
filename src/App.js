@@ -1,7 +1,8 @@
 import "./App.css";
-import { Switch, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Contact from "./components/Contact";
 import Fruits from "./components/Fruits";
+import Fruta from "./components/Fruta";
 
 function App() {
   return (
@@ -10,6 +11,11 @@ function App() {
         <Route exact path="/fruits">
           <Fruits />
         </Route>
+        
+        <Route exact path="/fruits/:id">
+          <Fruta/>
+          </Route>
+
         <Route exact path="/contact">
           <Contact />
         </Route>
